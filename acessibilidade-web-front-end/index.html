@@ -417,7 +417,7 @@
               Assine nossa newsletter para receber notícias técnicas sem spam!
             </h3>
             <form class="dialogNewsletter-form">
-              <label class="dialogNewsletter-label"> Email: </label>
+              <label for="nome"  class="dialogNewsletter-label for="nome" "> Email: </label for="nome" >
               <input
                 type="text"
                 class="dialogNewsletter-campo"
@@ -444,25 +444,30 @@
             </p>
 
             <div class="contatoCampo contatoCampo--sucesso">
-              <label>Nome: </label>
+              <label for="nome" >Nome: </label for="nome" >
               <input
-                type="text"
+                type="text" id="nome" 
                 class="contatoCampo--validouFoi"
-                value="Natan Souza"
+                placeholder="Digite seu nome"
                 required
               />
             </div>
 
             <div class="contatoCampo contatoCampo--erro">
-              <label>Email: </label>
-              <input type="email" class="contatoCampo--validouErro" required />
+              <label for="email" >Email: </label for="nome" >
+              <input
+                type="email" id="email"
+                class="contatoCampo--validouErro"
+                placeholder="E-mail"
+                required
+              />
               <span class="contatoCampo-msg contatoCampo-msg--erro">
                 Você quis dizer <a href="#">gmail.com?</a>
               </span>
             </div>
 
             <div class="contatoCampo contatoCampo--erro">
-              <label>Telefone: </label>
+              <label for="nome" >Telefone: </label for="nome" >
               <input
                 type="text"
                 class="contatoCampo--validouErro"
@@ -474,7 +479,7 @@
             </div>
 
             <div class="contatoCampo">
-              <label>CEP: </label>
+              <label for="nome" >CEP: </label for="nome" >
               <input
                 type="text"
                 maxlength="8"
@@ -484,47 +489,47 @@
             </div>
 
             <div class="contatoCampo">
-              <label>Endereço: </label>
+              <label for="nome" >Endereço: </label for="nome" >
               <input
                 type="text"
                 class="contatoCampo-campoDesabilitado"
-                disabled
+                readonly
                 value="Rua Vergueiro"
               />
             </div>
 
             <div class="contatoCampo">
-              <label>Bairro: </label>
+              <label for="nome" >Bairro: </label for="nome" >
               <input
                 type="text"
                 class="contatoCampo-campoDesabilitado"
-                disabled
+                readonly
                 value="Vila Mariana"
               />
             </div>
 
             <div class="contatoCampo">
-              <label>Cidade: </label>
+              <label for="nome" >Cidade: </label for="nome" >
               <input
                 type="text"
                 class="contatoCampo-campoDesabilitado"
-                disabled
+                readonly
                 value="São Paulo"
               />
             </div>
 
             <div class="contatoCampo">
-              <label>Estado: </label>
+              <label for="nome" >Estado: </label for="nome" >
               <input
                 type="text"
                 class="contatoCampo-campoDesabilitado"
-                disabled
+                readonly
                 value="SP"
               />
             </div>
 
             <div class="contatoCampo">
-              <label>Mensagem: </label>
+              <label for="nome" >Mensagem: </label for="nome" >
               <textarea name="" cols="30" rows="10" required></textarea>
             </div>
 
@@ -536,8 +541,8 @@
                 class="contatoCampo-checkbox"
                 id="receberEmail"
               />
-              <label class="contatoCampo-label" for="receberEmail"
-                >Receber destaques por email</label
+              <label for="nome"  class="contatoCampo-label for="nome" " for="receberEmail"
+                >Receber destaques por email</label for="nome" 
               >
             </div>
 
